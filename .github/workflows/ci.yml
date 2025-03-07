@@ -31,6 +31,9 @@ jobs:
       run: |
         pytest
 
+    - name: Check Docker version
+      run: docker --version
+
     - name: Build Docker image
       run: |
         docker build -t my-python-app .
